@@ -1,0 +1,10 @@
+[Unit]
+Description=Transkribus XML Transform
+
+[Service]
+Type=simple
+ExecStart=/usr/local/transkribus-xml-transform/systemd/start.sh
+ExecStop=/usr/local/transkribus-xml-transform/systemd/stop.sh
+
+[Install]
+WantedBy=multi-user.target
